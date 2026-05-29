@@ -249,6 +249,19 @@ Wrote a **Python script** that continuously monitors the `eve.json` file for new
 - detection of simple DoS attack ( Telegram alert)
 <img width="591" height="1280" alt="telegram bot DoS attack" src="https://github.com/user-attachments/assets/7dc80c02-a698-4c29-ad1a-be9cfb9a52ba" />
 
+## ⚡ Challenges & Mitigation
+ 
+| # | Challenge | What Happened | How It Was Fixed |
+|---|-----------|---------------|------------------|
+| 1 | **VM Network Communication Issues** | VMs could not ping each other during initial setup | Configured all three VMs to use the same network adapter type (Host-Only/Bridged) to ensure they were on the same virtual network |
+| 2 | **Suricata Listening on Wrong Interface** | Suricata was running but not capturing any traffic | Used `ip a` to identify the correct network interface and updated the Suricata configuration file accordingly |
+| 3 | **eve.json Not Generating Alerts** | No logs were being written to `eve.json` even when attacks were launched | Verified that Suricata rules were correctly loaded and that the Suricata service was actively running with `systemctl status suricata` |
+| 4 | **Python Script Missing Live Alerts** | The script was re-reading the entire `eve.json` from the start on every run instead of picking up only new entries | Implemented file seek / tail logic in the Python script to track the file position and only process newly appended lines |
+| 5 | **Telegram Bot Not Receiving Messages** | Bot was configured but no notifications were arriving on Telegram | Corrected the bot token and chat ID values, and confirmed the SOC machine had outbound internet access to reach the Telegram API |
+| 6 | **DVWA Database Connection Error** | DVWA failed to load and showed a database error after installation | Properly configured MariaDB user credentials and ran the DVWA setup page (`/setup.php`) to initialise the database |
+| 7 | **EveBox Dashboard Not Showing Alerts** | The EveBox web dashboard was empty and not reflecting Suricata events | Pointed EveBox to the correct `eve.json` file path in its configuration and restarted the EveBox service |
+
+
 ---
 
 ## ⚠️ Disclaimer
