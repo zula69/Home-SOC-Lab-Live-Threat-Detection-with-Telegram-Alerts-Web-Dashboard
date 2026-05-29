@@ -147,7 +147,7 @@ Installed and launched **EveBox**, which reads Suricata's `eve.json` in real tim
 - Starting evebox server
 <img width="1920" height="1080" alt="new evebox server start" src="https://github.com/user-attachments/assets/ecac9bd6-77c7-46ad-a7fc-dc0cc047f332" />
 
-### step 6 - updating local rules: Surikata.yaml
+### step 6 - updating local rules: Suricata.yaml
 
 - adding rules 
 <img width="1920" height="1080" alt="typing adding local rules" src="https://github.com/user-attachments/assets/b311f51d-bd8a-46d2-81dc-43d1cee6f4b5" />
