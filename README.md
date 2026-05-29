@@ -159,18 +159,38 @@ Installed and launched **EveBox**, which reads Suricata's `eve.json` in real tim
 
 Wrote a **Python script** that continuously monitors the `eve.json` file for new Suricata events. When an attack is detected, the script parses the alert details and sends an instant notification to a configured **Telegram bot**.
 
-> 📸 *Screenshot — Python script running + Telegram alert received*
+- creating a bot which shares eve.json log to a telegram chat (Using a telegram bot)
+<img width="1920" height="1080" alt="suricata final telegram bot removed repetition msges removed icons add location" src="https://github.com/user-attachments/assets/ba020cc4-51e9-4d47-9b39-b8d997a705db" />
 
----
 
-## 📁 Project Structure
+## 📁 Final test of the SOC lab
 
-```
-soc-home-lab/
-├── alert_bot.py          # Python script for Telegram alerts
-├── screenshots/          # Step-by-step lab screenshots
-└── README.md
-```
+- Starting vulnerable services in victim vm
+<img width="1920" height="1080" alt="final starting the vulnerable services" src="https://github.com/user-attachments/assets/488f2e36-a657-4851-9512-c95e798cf48e" />
+
+- setting DVWA security level to low
+<img width="1920" height="1080" alt="final dvwa low" src="https://github.com/user-attachments/assets/2cc2d2a6-dcb2-4dc8-98b7-7f009de69081" />
+
+### Starting suricata service
+<img width="1920" height="1080" alt="final starting suricata serice" src="https://github.com/user-attachments/assets/e7553a43-498b-4af5-ad33-6cd8ee99689d" />
+
+### Starting evebox web dashboard
+<img width="1920" height="1080" alt="final running evebox" src="https://github.com/user-attachments/assets/c94b9f0f-5596-42d2-b6b4-f84149566b0a" />
+
+### Running python script which direct eve.json log to telegram bot
+<img width="1920" height="1080" alt="running python script" src="https://github.com/user-attachments/assets/c67b69cb-69ec-454b-b862-abe9f044dcc0" />
+
+- Telegram message that inform whether the bot is active
+<img width="591" height="1280" alt="telegram bot stating messege" src="https://github.com/user-attachments/assets/054471e0-47b7-4862-98a3-c601647fba88" />
+
+
+
+
+
+
+
+
+
 
 ---
 
