@@ -50,27 +50,27 @@ This project demonstrates how a SOC analyst can set up threat detection infrastr
 
 Verified that all three virtual machines (Kali Attacker, Kali Victim, Parrot OS SOC) can communicate with each other over the network before proceeding.
 
-- ping from victim to SOC
+- pinging from victim to SOC
  <img width="1920" height="1080" alt="pinging from victim to parrot" src="https://github.com/user-attachments/assets/9a7fbf71-cda6-4d83-81df-5482fee7a158" />
 
 
-- ping from victim to attacker
+- pinging from victim to attacker
  <img width="1920" height="999" alt="pingning from victim to the attacker" src="https://github.com/user-attachments/assets/b5b4272b-74dc-4b36-ad84-8e6483d47f55" />
 
 
-- ping from attacker to SOC
+- pinging from attacker to SOC
 <img width="1920" height="1080" alt="pinging from attacker to parrot os" src="https://github.com/user-attachments/assets/11114622-7629-4ac6-a2d2-0c095790eb02" />
 
 
-- ping from attacker to victim
+- pinging from attacker to victim
 <img width="1920" height="993" alt="pinging from attacker to the victim" src="https://github.com/user-attachments/assets/6bbce987-7f2b-4ead-8e45-3bf6a2e2ca4b" />
 
 
-- ping from SOC to attacker
+- pinging from SOC to attacker
  <img width="1920" height="1080" alt="pinging from parrot to attacker 1" src="https://github.com/user-attachments/assets/31f0639d-80c7-43f8-b671-273abcb44238" />
 
 
-- ping from SOC to victim
+- pinging from SOC to victim
  <img width="1920" height="1080" alt="pinging from parrot to victim k2" src="https://github.com/user-attachments/assets/539cfa42-f929-4515-8544-e059de71b730" />
 
 
@@ -82,15 +82,39 @@ Verified that all three virtual machines (Kali Attacker, Kali Victim, Parrot OS 
 
 Configured the Kali Linux victim machine to be intentionally vulnerable by adding new user accounts and weakening its security posture to allow attack simulations.
 
+- adding users with weak passwords
+<img width="1920" height="1080" alt="adding users with weak passwords" src="https://github.com/user-attachments/assets/f00dffeb-e40f-484d-aa5e-b555b10c6360" />
+
+- adding users with weak passwords
+<img width="1920" height="1080" alt="adding another user" src="https://github.com/user-attachments/assets/1a6d025c-0d80-435a-b783-97eebe333441" />
+
 
 
 ### Step 3 — Installing MariaDB Server & DVWA
 
 Installed **MariaDB** as the database backend and set up **DVWA (Damn Vulnerable Web Application)** on the victim machine to serve as a live target for web-based attacks.
 
-> 📸 *Screenshot — DVWA running in browser on victim machine*
+- installing dependencies (git, php, php-mysqli)
+  <img width="1920" height="1080" alt="installing dependories github" src="https://github.com/user-attachments/assets/40ce325b-d22e-4760-bdff-669ad4e8cb2d" />
 
----
+- Cloning DVWA git
+  <img width="1920" height="1080" alt="cloning github" src="https://github.com/user-attachments/assets/5d649849-6a29-4c1d-850e-39ba77bfedec" />
+
+- enabling apache 2 server and mysql server
+  <img width="1920" height="1080" alt="enabling apache 2 github" src="https://github.com/user-attachments/assets/7c5824ae-df44-47a2-babb-7148f98bdd08" />
+
+  <img width="1920" height="1080" alt="enabling mysql githuib" src="https://github.com/user-attachments/assets/b7452531-7786-498f-affd-9f79569a11ed" />
+
+- configuring DVWA config
+<img width="1920" height="1080" alt="before configuring the php github" src="https://github.com/user-attachments/assets/68c56ad1-b1d8-4862-99a2-4b7e6de88cd5" />
+
+- configuring mariadb by adding a user that can access thorugh local host
+<img width="1920" height="1080" alt="configuring mariadb by adding a user that can accessibale thorugh local host" src="https://github.com/user-attachments/assets/b5964bb1-cf80-4247-a1eb-ed49e79c7392" />
+
+- DVWA login page and web page
+<img width="1920" height="1080" alt="DVWA login page" src="https://github.com/user-attachments/assets/8211538d-0806-45bf-86d5-d9a759c46414" />
+
+<img width="1920" height="1080" alt="DVWA page" src="https://github.com/user-attachments/assets/36b9a6a2-f69a-4278-9f92-cfc9bd3fbfd2" />
 
 ### Step 4 — Installing Suricata on Parrot OS (SOC Machine)
 
