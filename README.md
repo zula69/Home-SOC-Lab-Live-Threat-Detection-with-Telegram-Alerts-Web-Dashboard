@@ -183,14 +183,71 @@ Wrote a **Python script** that continuously monitors the `eve.json` file for new
 - Telegram message that inform whether the bot is active
 <img width="591" height="1280" alt="telegram bot stating messege" src="https://github.com/user-attachments/assets/054471e0-47b7-4862-98a3-c601647fba88" />
 
+### Performing a nmap scan from attacker vm to victim vm
+<img width="1920" height="1080" alt="final nmap basic scan" src="https://github.com/user-attachments/assets/f2fe18a5-e984-416d-8493-1fd24048b5e8" />
 
+- detection of nmap scan ( by suricata)
+<img width="1920" height="1080" alt="nmap result suricata" src="https://github.com/user-attachments/assets/4afddff7-dfb2-476e-bf0b-1d0f5df022d8" />
 
+- detection of nmap scan ( by web dashboard)
+<img width="1920" height="1080" alt="nmap result web dash board" src="https://github.com/user-attachments/assets/bb17b957-9473-42f5-b473-3671188dc65c" />
 
+- detection of nmap scan ( telegram alert)
+<img width="591" height="1280" alt="telegram bot nmap scan" src="https://github.com/user-attachments/assets/d7de37e2-c4bc-4bd0-8b77-bca84c60ffb0" />
 
+### Performing SSH bruteforce attack from attacker vm to victim vm
+<img width="1920" height="1080" alt="ssh bruteforce" src="https://github.com/user-attachments/assets/7ca0464c-457c-49bb-9afc-c00e03e67679" />
 
+- successful ssh login
+ <img width="1920" height="1080" alt="successful ssh login" src="https://github.com/user-attachments/assets/d5e3ed6f-c77a-40ce-bfd4-46d42041ad49" />
 
+- detection of ssh bruteforce ( by suricata)
+<img width="1920" height="1080" alt="ssh result suricata" src="https://github.com/user-attachments/assets/b25731d1-e832-4181-8171-1c4b17f37a14" />
 
+- detection of ssh bruteforce ( telegram alert)
+<img width="591" height="1280" alt="telegram bot ssh bruteforce" src="https://github.com/user-attachments/assets/bf758074-3cce-461b-b848-c2e89d028de3" />
 
+### Performing FTP bruteforce attack from attacker vm to victim vm
+<img width="1920" height="1080" alt="ftp attack and ftp login succes" src="https://github.com/user-attachments/assets/24bf2402-0ece-416b-b394-dd392ea2536c" />
+
+- detection of FTP bruteforce ( by suricata)
+<img width="1920" height="1080" alt="ftp login attemp in suricata" src="https://github.com/user-attachments/assets/4fde62cd-18df-4a82-be16-706a1ba2f2fc" />
+
+- detection of FTP bruteforce ( telegram alert)
+<img width="591" height="1280" alt="telegram bot ftp medusa" src="https://github.com/user-attachments/assets/d5fb951f-f261-4efe-acfe-fbabd38038bf" />
+
+### Performing a gobuster web scan from attacker vm to victim vm
+<img width="1920" height="1080" alt="gobuster web attack" src="https://github.com/user-attachments/assets/e07517f1-d547-4669-beda-294a2c4e18ea" />
+
+- detection of gobuster web scan (by suricata)
+<img width="1920" height="1080" alt="gobuster suricata" src="https://github.com/user-attachments/assets/ddc215e0-48d5-4dbd-88a1-ab38aa3959ac" />
+
+- detection of gobuster web scan (by web dashboard)
+<img width="1920" height="1080" alt="gobuster web dashboard" src="https://github.com/user-attachments/assets/293d13c4-9a5d-4bad-962d-98d27971ee73" />
+
+- detection of gobuster web scan (Telegram alert)
+<img width="591" height="1280" alt="telegram bot wb application attack" src="https://github.com/user-attachments/assets/5ef7074c-4407-454f-bcab-f1f9c2e27f21" />
+
+### Performing a Nikto web scan from attacker vm to victim vm
+<img width="1920" height="1080" alt="nikto attack" src="https://github.com/user-attachments/assets/4a7f852b-4077-4bf7-8d33-e6bb2c41a723" />
+
+- detection of nikto web scan ( by suricata)
+<img width="1920" height="1080" alt="nikto attack suricata" src="https://github.com/user-attachments/assets/846c6297-4a72-44d4-a93b-71faa6c060d1" />
+
+- detection of nikto web scan ( by web dashboard)
+<img width="1920" height="1080" alt="nikto web attack webdashboard" src="https://github.com/user-attachments/assets/777bde4b-0ba5-4b96-b56c-fbca9acb73d3" />
+
+- detection of nikto web scan (Telegram alert)
+<img width="591" height="1280" alt="telegram bot wb application attack" src="https://github.com/user-attachments/assets/78f08537-555f-425b-b0fc-3aabaa2c4a41" />
+
+### Performing a simple DoS attack from attacker vm to victim vm
+<img width="1920" height="1080" alt="dos attack" src="https://github.com/user-attachments/assets/2b05f162-1b1f-48bf-baf5-c146391c0994" />
+
+- detection of simple DoS attack ( by web dashboard)
+<img width="1920" height="1080" alt="dos attack wen dashboard" src="https://github.com/user-attachments/assets/c8405754-1ae1-48c7-a35c-ebf23e968edd" />
+
+- detection of simple DoS attack ( Telegram alert)
+<img width="591" height="1280" alt="telegram bot DoS attack" src="https://github.com/user-attachments/assets/7dc80c02-a698-4c29-ad1a-be9cfb9a52ba" />
 
 ---
 
