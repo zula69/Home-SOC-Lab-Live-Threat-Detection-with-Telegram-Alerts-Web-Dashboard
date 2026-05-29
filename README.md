@@ -50,7 +50,9 @@ This project demonstrates how a SOC analyst can set up threat detection infrastr
 
 Verified that all three virtual machines (Kali Attacker, Kali Victim, Parrot OS SOC) can communicate with each other over the network before proceeding.
 
-> 📸 *Screenshot — Successful ping between all three VMs*
+- ping from kali 2 to parrot os
+  <img width="1920" height="1080" alt="pinging fom kali 2 to parrot" src="https://github.com/user-attachments/assets/bd93488e-230c-4499-82ce-c5033c54eced" />
+
 
 ---
 
