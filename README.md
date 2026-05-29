@@ -120,17 +120,40 @@ Installed **MariaDB** as the database backend and set up **DVWA (Damn Vulnerable
 
 Installed and configured **Suricata** on the Parrot OS machine to monitor network traffic flowing between the attacker and victim. Suricata logs all detected threats to the `eve.json` file.
 
-> 📸 *Screenshot — Suricata running and monitoring traffic*
+- installing suricata on parrot OS
+<img width="1920" height="1080" alt="installing suricata" src="https://github.com/user-attachments/assets/018c64bb-7f2f-47fd-950f-f66e8d1c6859" />
 
----
+- configuring suricata by adding the network interface (Network of the SOC lab) and local rules
+<img width="1920" height="1080" alt="configuring suricata" src="https://github.com/user-attachments/assets/ef95013e-65d7-4783-ac0d-928dc6f943f6" />
+
+- updating the configuration of the suricata.yaml ( local rules and network)
+<img width="1920" height="1080" alt="updating suricat rules" src="https://github.com/user-attachments/assets/ee6ff190-9948-4a15-8ce7-bb1b717435ee" />
+
+- testing suricata fast log ( which is only suitable for normal monitoring) by doing a nmap scan from attacker vm to victim vm
+<img width="1920" height="1080" alt="nmap scan from ali 1 to kali 2 suricata" src="https://github.com/user-attachments/assets/a57f08f4-9b8a-412b-b6ac-561620e3d521" />
+
+<img width="1920" height="1080" alt="suricata detecting nmap scans from kali1 to kali 2" src="https://github.com/user-attachments/assets/e7dfd5b9-1acf-4441-b474-6b2ab48bae70" />
 
 ### Step 5 — Setting Up EveBox Web Dashboard
 
 Installed and launched **EveBox**, which reads Suricata's `eve.json` in real time and presents all alerts on a live, searchable web dashboard.
 
-> 📸 *Screenshot — EveBox dashboard showing live alerts*
+- installing evebox web dashboard
+<img width="1920" height="1080" alt="new installing evebox" src="https://github.com/user-attachments/assets/2f0b91fe-5b01-4835-95d0-1839b46351bb" />
 
----
+- enabling eve.json in suricata.yaml which enables to send live data to the web dashboard
+<img width="1920" height="1080" alt="new enabling JSON eve" src="https://github.com/user-attachments/assets/4a67f3c9-88ba-4359-9ea4-2d6f066c0094" />
+
+- Starting evebox server
+<img width="1920" height="1080" alt="new evebox server start" src="https://github.com/user-attachments/assets/ecac9bd6-77c7-46ad-a7fc-dc0cc047f332" />
+
+### step 6 - updating local rules: Surikata.yaml
+
+- adding rules 
+<img width="1920" height="1080" alt="typing adding local rules" src="https://github.com/user-attachments/assets/b311f51d-bd8a-46d2-81dc-43d1cee6f4b5" />
+
+- verifying whether the updated rules working by starting suricata
+<img width="1920" height="1080" alt="verifying new local rules are added" src="https://github.com/user-attachments/assets/a512a9e7-83cf-4f88-b8ec-bb344be8b06f" />
 
 ### Step 6 — Python Script: Live Telegram Alert Notifications
 
